@@ -5,6 +5,9 @@ struct myStructure {
     char myLetter;
     char myString[30]; // Strings
 };
+struct newStructure {
+    float Temprature;
+};
 int main(){
     struct myStructure s1;
     struct myStructure s2;
@@ -37,5 +40,12 @@ int main(){
     s5 =s4;
     printf("%d\n%c\n%s\n\n", s5.myNum, s5.myLetter, s5.myString);
 
+    // miltiple struct function use
+    struct newStructure s6;
+    s6.Temprature = 23;
+    printf("%d\n\n", s6.Temprature);
     return 0;
 }
+
+
+// Copy structure, multiple structure
