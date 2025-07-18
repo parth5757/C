@@ -26,9 +26,16 @@ int main(){
     printf("My Number %d\n", s2.myNum);
     printf("My Letter %c\n\n", s2.myLetter);
 
-        // Simpler Structure syntax.
+    // Simpler Structure syntax.
     struct myStructure s3 = {21, 'C', "Jay Shree Krishna"};
 
-    printf("%d\n%c\n%s\n", s3.myNum, s3.myLetter, s3.myString);
+    printf("%d\n%c\n%s\n\n", s3.myNum, s3.myLetter, s3.myString);
+
+    // Copy Sturcture
+    struct myStructure s4 = {51, 'D', "Jay Hind"};
+    struct myStructure s5;
+    s5 =s4;
+    printf("%d\n%c\n%s\n\n", s5.myNum, s5.myLetter, s5.myString);
+
     return 0;
 }
