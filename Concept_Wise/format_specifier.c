@@ -19,9 +19,13 @@ int main(){
     char str[] = "Jay Shree Ram\n";
     printf("%s", str);
     // Add diffferet variable values in any statment.
-    printf("My number is %d and my letter is %c", myNum, myLetter);
+    printf("My number is %d and my letter is %c \n", myNum, myLetter);
 
+    // Double value data type.
+    double doubleVal = 12345.6789;
+    // here the %lf is use for the print any double data type value printing. and if we want to print specific length number of value after point then we can add needed number in between % and lf with Syntax: %.3lf(here 3 is needed number it print only 3 length point after value.).
+    printf("Double: %.4lf, %lf\n", doubleVal, doubleVal);
+
+    
     return 0;
-
-
 }
